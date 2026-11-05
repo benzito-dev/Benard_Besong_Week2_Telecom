@@ -33,6 +33,8 @@ One row per user: 700 users, 11 columns.
 | User Behavior Class | Label from 1 to 5 |
 
 **Derived column:** `Age_Category` (18-30, 31-40, 41-50, 51+), created from Age for the age pivots and slicer.
+`App Usage Time (hrs/day)` created from  `App Usage Time (min/day)`,  for consistency check between App Usage Time and Screen-On time.
+`Usage Segment` (Heavy,  Medium, LightUsage), Created from  `User Behaviour Class` for the Heavy User-share KPI.
 
 **About User Behavior Class:** the dataset does not define it. In the data it behaves as an ordinal usage-intensity label, from 1 (light) to 5 (extreme). Treat it as a category, not a number: do not average it.
 
